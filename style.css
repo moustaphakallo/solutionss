@@ -1,0 +1,61 @@
+.name{
+  background-color: rgb(19, 216, 216);
+  color: black;
+  text-align: center;
+  align-items: center;
+   margin-left: 200px;
+  margin-right: 200px;
+  border-radius: 12px;
+}
+.just{
+  background-color: aliceblue;
+  border-radius: 15px solid;
+  
+}
+.frest{
+  background-color: brown;
+  text-align: center;
+  align-items: center;
+  margin-left: 200px;
+  margin-right: 200px;
+  border-radius: 12px;
+}
+.last{
+  background-color: rgb(42, 130, 165);
+ ;
+  
+  padding-left: 400px;
+  align-items: center;
+}
+.head{
+  display: flex;
+  
+}
+.html{
+  background-color: aqua;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+.beologie{
+  background-color: rgb(16, 190, 89);
+padding-left: 400px;
+  align-items: center;
+}
+.geiographie{
+    background-color: rgba(245, 4, 136, 0.589);
+padding-left: 400px;
+  align-items: center;
+}
+.histoir{
+      background-color: rgba(173, 108, 23, 0.979);
+padding-left: 400px;
+  align-items: center;
+}
+.chimie{
+      background-color: rgba(173, 108, 23, 0.979);
+padding-left: 400px;
+  align-items: center;
+}
+.ecm{
+  background-color: brown;
+}

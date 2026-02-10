@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+      body {
+        font-family: "Source Sans 3", sans-serif;
+      }
+
+      .food {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 12px;
+      }
+      .food h1 {
+        color: #f17228;
+      }
+      .food .waGon {
+        color: #ffb30e;
+      }
+      .food img {
+        width: 28px;
+        height: 30px;
+      }
+      .Bus {
+        display: flex;
+        align-items: center;
+      }
+      .Bus h1 {
+        color: black;
+      }
+      .Search {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 18px;
+      }
+      .user {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 5px 10px #ffae004a;
+        padding: 1px 20px;
+      }
+      .user p {
+        color: #ffd000fb;
+      }
+      .Deliver {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .Are h1 {
+        color: white;
+      }
+      .Are {
+        background-color: rgb(255, 217, 0);
+        text-align: center;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .moto {
+        display: flex;
+        text-align: center;
+        border-radius: 12px;
+        margin-right: 800px;
+        background-color: white;
+        justify-content: space-around;
+        align-items: center;
+        gap: 12px;
+      }
+      .moto p {
+        color: #f17228;
+        padding-right: 200px;
+      }
+      .Pickup {
+        display: flex;
+        color: black;
+        gap: 12px;
+      }
+      .Pickup p {
+        color: black;
+      }
+      .ind {
+        display: block;
+      }
+      .EnterYourAddress {
+        display: flex;
+        text-align: center;
+        border-radius: 12px;
+        margin-right: 800px;
+        background-color: white;
+        justify-content: space-around;
+        align-items: center;
+        gap: 12px;
+      }
+      .EnterYourAddress p {
+        color: rgba(0, 0, 0, 0.301);
+      }
+      .FindFood {
+        align-items: center;
+        display: flex;
+        gap: 12px;
+        justify-content: space-around;
+      }
+      .Your {
+        background-color: rgba(240, 255, 255, 0.5);
+        border-radius: 12px;
+        margin-right: 200px;
+      }
+      .Address {
+        background-color: #f65900;
+        color: white;
+        border-radius: 8px;
+      }
+      .Days img {
+        height: 200px;
+        width: 200px;
+      }
+
+      .Howdoesitwork {
+        color: #f17228;
+        text-align: center;
+      }
+      .Select {
+        display: block;
+      }
+      .Choose {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+      .FlashDeals {
+        color: #f17228;
+        text-align: center;
+      }
+
+      .best {
+        background-image: url(salad.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 200px;
+        height: 200px;
+        text-align: center;
+        color: white;
+      }
+      .best h1 {
+        background-color: #ffb30e;
+        border-radius: 150px;
+        color: white;
+        margin-top: 150px;
+        align-items: center;
+        margin-right: 120px;
+      }
+
+      .Vage {
+        color: #f17228;
+        background-color: #f1722833;
+        border-radius: 17px;
+      }
+
+      .Group {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+      .over {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+      .Popular {
+        align-items: center;
+        text-align: center;
+      }
+      .home {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 10px;
+      }
+      .home img {
+        height: 200px;
+        width: 200px;
+      }
+      .Arena {
+        display: flex;
+        gap: 7px;
+        color: #ffb30e;
+      }
+      .Text {
+        text-align: center;
+        align-items: center;
+        padding: 0 20px;
+      }
+      .Fast {
+        display: block;
+      }
+      .safe {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+      .Order {
+        display: flex;
+        color: #ffb30e;
+      }
+      .Now {
+        color: white;
+        border-radius: 12px;
+        background-color: #f17228;
+
+        text-align: center;
+        display: block;
+      }
+      .bourions {
+        display: block;
+      }
+      .gatau {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+      .does {
+        display: flex;
+        color: #f17228;
+      }
+      .juni {
+        display: flex;
+        background-color: #f17228;
+        border-radius: 12px;
+        color: #ffffff;
+
+        width: 100px;
+      }
+      .salad {
+        display: flex;
+        gap: 10px;
+        background-image: url(2gatau.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        align-items: center;
+        width: 200px;
+        height: 200px;
+        margin-bottom: 100px;
+      }
+      .deals {
+        display: flex;
+        justify-content: space-around;
+      }
+      .Foodworld {
+        display: block;
+        color: #ffb30e;
+      }
+
+      .waGon {
+        color: #000;
+      }
+      .file {
+        display: flex;
+      }
+      .starr {
+        display: flex;
+        margin-bottom: 10px;
+      }
+      .spicy {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 200px;
+      }
+      .dolard {
+        color: #faaa01;
+      }
+      .Greys {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+      .pops {
+        padding-left: 100px;
+        gap: 0px;
+        color: #faaa01;
+      }
+      .Pizza {
+        display: block;
+      }
+      .Pizza img {
+        border-radius: 200px;
+        height: 100px;
+        width: 100px;
+      }
+      .fonts {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .fonts p {
+        text-align: center;
+      }
+      .kilogram p {
+        color: #fb3c00;
+      }
+      .kilogram {
+        display: flex;
+      }
+      .App {
+        display: flex;
+        text-align: center;
+        gap: 12px;
+        border-radius: 46px;
+        box-shadow: 0 5px 10px #ffae004a;
+        align-items: center;
+        padding: 1px 20px;
+        height: 200px;
+        width: 400px;
+
+        margin-left: 300px;
+        justify-content: space-between;
+      }
+      .App img {
+        height: 50px;
+        width: 50px;
+      }
+
+      .Crispy {
+        color: #ffb30e;
+      }
+      .Proceed {
+        color: white;
+        background-color: #ff8a00;
+        border-radius: 12px;
+
+        width: 200px;
+        text-align: center;
+      }
+      .large {
+        display: block;
+      }
+      .Dsize {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin-left: 300px;
+      }
+      .Dsize img {
+        height: 200px;
+        width: 300px;
+      }
+      .that {
+        color: #ffb30e;
+      }
+
+      .accessible {
+        display: block;
+        padding-bottom: 20px;
+      }
+      .Deliver {
+        display: block;
+        padding-top: 20px;
+      }
+      .Wanna {
+        color: #ffb30e;
+      }
+      .eat {
+        display: block;
+      }
+      .hot {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        margin-left: 200px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+      }
+      .Install {
+        color: #faaa01;
+      }
+      .hot img {
+        height: 200px;
+        width: 300px;
+      }
+      .Get {
+        display: block;
+      }
+      .Install img {
+        height: 10px;
+        width: 10px;
+      }
+      .gogol {
+        display: flex;
+        border-radius: 30px;
+        box-shadow: #ffae004a;
+        align-items: center;
+      }
+      .Look {
+        display: block;
+      }
+      .plas {
+        align-items: center;
+        display: flex;
+        justify-content: space-around;
+        background-color: #f65900;
+        background-position: top 150px;
+      }
+      .lost {
+        display: flex;
+        gap: 12px;
+      }
+      .with {
+        color: wheat;
+        background-image: url(direction.png);
+        font-size: 56px;
+        align-items: center;
+        text-align: center;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .Francisco{
+        display: block;
+        color: white;
+        background-color: #000;
+      }
+      .Miami{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: #000;
+        color: white;
+      }
+      .cities{
+        color: white;
+        background-color: #000;
+
+      }
+   
+    </style>
+  </head>
+  <body>
+    <nav class="food">
+      <div class="Deliver">
+        <img src="c:\Users\HP PC\Downloads\ks.png" alt="" />
+        <h1>food<span class="waGon">waGon</span></h1>
+      </div>
+      <div class="Bus">
+        <strong>Deliver to:</strong>
+        <img src="maker.png" alt="" />
+        <p>Current Location</p>
+        <h1>Mohammadpur Bus Stand, Dhaka</h1>
+      </div>
+      <div class="Search">
+        <img src="Search.png" alt="" />
+        <p>Search Food</p>
+      </div>
+      <div class="user">
+        <img src="user.png" alt="" />
+        <p>Login</p>
+      </div>
+    </nav>
+
+    <div class="Are">
+      <h1>Are you starving?</h1>
+      <h6>Within a few clicks, find meals that are accessible near you</h6>
+      <div class="junior">
+        <div class="ind">
+          <div class="moto">
+            <img src="moto.svg" alt="" />
+            <p>Delivery</p>
+            <div class="Pickup">
+              <img src="kadinah.svg" alt="" />
+              <p>Pickup</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="EnterYourAddress">
+            <img src="logs.svg" alt="" />
+            <p class="Your">Enter Your Address</p>
+            <div class="FindFood">
+              <img src="Search.png" alt="" />
+              <p class="Address">Find Food</p>
+            </div>
+          </div>
+        </div>
+        <div class="Days">
+          <img src="Image.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+    <h1 class="Howdoesitwork">How does it work</h1>
+    <div class="Choose">
+      <div class="Select">
+        <img src="logalisateur.svg" alt="" />
+        <h6>Select location</h6>
+        <p>Check over hundreds of menus to <br />pick your favorite food</p>
+      </div>
+
+      <div class="Select">
+        <img src="Menu.png" alt="" />
+        <h6>Choose order</h6>
+
+        <p>
+          It's quick, safe, and simple. Select <br />several methods of payment
+        </p>
+      </div>
+      <div class="Select">
+        <img src="dolard.svg" alt="" />
+        <h6>Pay advanced</h6>
+
+        <p>
+          Choose the location where your food <br />
+          will be delivered.
+        </p>
+      </div>
+      <div class="Select">
+        <img src="cercl.svg" alt="" />
+        <h6>Enjoy meals</h6>
+        <p>Food is made and delivered directly <br />to your home.</p>
+      </div>
+    </div>
+    <div>
+      <h1 class="FlashDeals">Flash Deals</h1>
+    </div>
+
+    <div class="Group">
+      <div class="best">
+        <h1>25%</h1>
+      </div>
+
+      <div class="best">
+        <h1>25%</h1>
+      </div>
+      <div class="best">
+        <h1>25%</h1>
+      </div>
+      <div class="best">
+        <h1>25%</h1>
+      </div>
+    </div>
+    <div class="over">
+      <div class="Greys">
+        <h1>Greys Vage</h1>
+        <p class="Vage">7 Days Remaining</p>
+      </div>
+      <div class="Greys">
+        <h1>Greys Vage</h1>
+        <p class="Vage">7 Days Remaining</p>
+      </div>
+      <div class="Greys">
+        <h1>Greys Vage</h1>
+        <p class="Vage">7 Days Remaining</p>
+      </div>
+      <div class="Greys">
+        <h1>Greys Vage</h1>
+        <p class="Vage">7 Days Remaining</p>
+      </div>
+    </div>
+    <div class="Group">
+      <div class="best">
+        <h1>25%</h1>
+      </div>
+
+      <div class="best">
+        <h1>25%</h1>
+      </div>
+      <div class="best">
+        <h1>25%</h1>
+      </div>
+      <div class="best">
+        <h1>25%</h1>
+      </div>
+    </div>
+    <div class="over">
+      <div class="Greys">
+        <h1>Greys Vage</h1>
+        <p class="Vage">7 Days Remaining</p>
+      </div>
+      <div class="Greys">
+        <h1>Greys Vage</h1>
+        <p class="Vage">7 Days Remaining</p>
+      </div>
+      <div class="Greys">
+        <h1>Greys Vage</h1>
+        <p class="Vage">7 Days Remaining</p>
+      </div>
+      <div class="Greys">
+        <h1>Greys Vage</h1>
+        <p class="Vage">7 Days Remaining</p>
+      </div>
+    </div>
+    <h1 class="Popular">Popular items</h1>
+    <div class="gatau">
+      <input type="chevron-left" />
+      <div class="bourions">
+        <img src="gatau.png" alt="" />
+        <p>Burger Arena</p>
+        <div class="does">
+          <img src="logs.svg" alt="" />
+          <p>Burger Arena</p>
+        </div>
+        <p>$3.88</p>
+        <p class="Now">Order Now</p>
+      </div>
+      <div>
+        <img src="gatau.png" alt="" />
+        <p>Burger Arena</p>
+        <div>
+          <img src="logs.svg" alt="" />
+          <p>Burger Arena</p>
+        </div>
+        <p>$3.88</p>
+        <p class="Now">Order Now</p>
+      </div>
+      <div>
+        <img src="gatau.png" alt="" />
+        <p>Burger Arena</p>
+        <div class="does">
+          <img src="logs.svg" alt="" />
+          <p>Burger Arena</p>
+        </div>
+        <p>$3.88</p>
+        <p class="Now">Order Now</p>
+      </div>
+      <div>
+        <img src="gatau.png" alt="" />
+        <p>Burger Arena</p>
+        <div>
+          <img src="logs.svg" alt="" />
+          <p>Burger Arena</p>
+        </div>
+        <p>$3.88</p>
+        <p class="Now">Order Now</p>
+      </div>
+      <input type="chevron-right" />
+    </div>
+    <div class="deals">
+      <div class="salad">
+        <div class="juni">
+          <img src="" alt="" />
+          <p>20% off</p>
+        </div>
+        <div class="juni">
+          <img src="braselais.svg" alt="" />
+          <p>fast</p>
+        </div>
+      </div>
+      <div class="salad">
+        <div class="juni">
+          <img src="tre.svg" alt="" />
+          <p>20% off</p>
+        </div>
+        <div class="juni">
+          <img src="braselais.svg" alt="" />
+          <p>fast</p>
+        </div>
+      </div>
+      <div class="salad">
+        <div class="juni">
+          <img src="tre.svg" alt="" />
+          <p>20% off</p>
+        </div>
+        <div class="juni">
+          <img src="braselais.svg" alt="" />
+          <p>fast</p>
+        </div>
+      </div>
+      <div class="salad">
+        <div class="juni">
+          <img src="tre.svg" alt="" />
+          <p>20% off</p>
+        </div>
+        <div class="juni">
+          <img src="braselais.svg" alt="" />
+          <p>fast</p>
+        </div>
+      </div>
+    </div>
+    <div class="spicy">
+      <div class="file">
+        <img src="color blau.svg" alt="" />
+        <div class="Foodworld">
+          <p class="waGon">Foodworld</p>
+          <div class="starr">
+            <img src="star.svg" alt="" />
+            <p>46</p>
+          </div>
+        </div>
+      </div>
+      <div class="file">
+        <img src="pout.png" alt="" />
+        <div class="Foodworld">
+          <p class="waGon">Foodworld</p>
+          <div class="starr">
+            <img src="star.svg" alt="" />
+            <p>56</p>
+          </div>
+        </div>
+      </div>
+      <div class="file">
+        <img src="blau sail.png" alt="" />
+        <div class="Foodworld">
+          <p class="waGon">Foodworld</p>
+          <div class="starr">
+            <img src="star.svg" alt="" />
+            <p>34</p>
+          </div>
+        </div>
+      </div>
+      <div class="file">
+        <img src="vert.svg" alt="" />
+        <div class="Foodworld">
+          <p class="waGon">Foodworld</p>
+          <div class="starr">
+            <img src="star.svg" alt="" />
+            <p>46</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="deals">
+      <div class="salad">
+        <div class="juni">
+          <img src="tre.svg" alt="" />
+          <p>20% off</p>
+        </div>
+        <div class="juni">
+          <img src="braselais.svg" alt="" />
+          <p>fast</p>
+        </div>
+      </div>
+      <div class="salad">
+        <div class="juni">
+          <img src="tre.svg" alt="" />
+          <p>20% off</p>
+        </div>
+        <div class="juni">
+          <img src="braselais.svg" alt="" />
+          <p>fast</p>
+        </div>
+      </div>
+      <div class="salad">
+        <div class="juni">
+          <img src="tre.svg" alt="" />
+          <p>20% off</p>
+        </div>
+        <div class="juni">
+          <img src="braselais.svg" alt="" />
+          <p>fast</p>
+        </div>
+      </div>
+      <div class="salad">
+        <div class="juni">
+          <img src="tre.svg" alt="" />
+          <p>20% off</p>
+        </div>
+        <div class="juni">
+          <img src="braselais.svg" alt="" />
+          <p>fast</p>
+        </div>
+      </div>
+    </div>
+    <div class="spicy">
+      <div class="file">
+        <img src="color blau.svg" alt="" />
+        <div class="Foodworld">
+          <p class="waGon">Foodworld</p>
+          <div class="starr">
+            <img src="star.svg" alt="" />
+            <p>46</p>
+          </div>
+        </div>
+      </div>
+      <div class="file">
+        <img src="pout.png" alt="" />
+        <div class="Foodworld">
+          <p class="waGon">Foodworld</p>
+          <div class="starr">
+            <img src="star.svg" alt="" />
+            <p>56</p>
+          </div>
+        </div>
+      </div>
+      <div class="file">
+        <img src="blau sail.png" alt="" />
+        <div class="Foodworld">
+          <p class="waGon">Foodworld</p>
+          <div class="starr">
+            <img src="star.svg" alt="" />
+            <p>34</p>
+          </div>
+        </div>
+      </div>
+      <div class="file">
+        <img src="vert.svg" alt="" />
+        <div class="Foodworld">
+          <p class="waGon">Foodworld</p>
+          <div class="starr">
+            <img src="star.svg" alt="" />
+            <p>46</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="Greys">
+      <h1>Search by Food</h1>
+      <p class="pops">
+        View All <span><img src="chervron.svg" alt="" /> </span>
+      </p>
+      <div class="dolard">
+        <img src="Arrow Left.png" alt="" />
+        <img src="Arrow Right.png" alt="" />
+      </div>
+    </div>
+    <div class="fonts">
+      <div class="Pizza">
+        <img src="gatau.png" alt="" />
+        <p>Pizza</p>
+      </div>
+      <div class="Pizza">
+        <img src="gatau3.svg" alt="" />
+        <p>gatau</p>
+      </div>
+      <div class="Pizza">
+        <img src="2gatau.svg" alt="" />
+        <p>frit</p>
+      </div>
+      <div class="Pizza">
+        <img src="plas.svg" alt="" />
+        <p>viand</p>
+      </div>
+    </div>
+
+    <div class="App">
+      <div class="kilogram">
+        <img src="kilo.svg" alt="" />
+        <p>Daily <br />Discounts</p>
+      </div>
+      <div class="kilogram">
+        <img src="logalisateur.svg" alt="" />
+        <p>
+          Live <br />
+          Tracing
+        </p>
+      </div>
+      <div class="kilogram">
+        <img src="montre.svg" alt="" />
+        <p>
+          Quick <br />
+          Delivery
+        </p>
+      </div>
+    </div>
+    <div class="plas">
+      <img src="telphon.jpg" alt="" />
+      <div class="Look">
+        <h1 class="Install">Install the app</h1>
+        <p>
+          It's never been easier to order food. <br />Look for the finest
+          discounts and <br />
+          you'll be lost in a world of delectable food.
+        </p>
+        <div class="lost">
+          <div class="gogol">
+            <img src="gogol plas.png" alt="" />
+            <div class="Get">
+              <p>Get it on</p>
+              <h1>Google Play</h1>
+            </div>
+          </div>
+          <div class="gogol">
+            <img src="app.svg" alt="" />
+            <div class="Get">
+              <p>Get it on</p>
+              <h1>Google Play</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="accessible">
+      <div class="top">
+        <div class="Dsize">
+          <div class="large">
+            <h1>
+              Best deals
+              <span class="Crispy">
+                Crispy <br />
+                Sandwiches</span
+              >
+            </h1>
+            <p>
+              Enjoy the large <br />
+              Dsize of sandwiches. <br />Complete perfect <br />slice of
+              sandwiches.
+            </p>
+            <p class="Proceed">Proceed to order</p>
+          </div>
+          <img src="c:\Users\HP PC\Downloads\plataux.png" alt="" />
+        </div>
+      </div>
+      <div class="Dsize">
+        <img src="c:\Users\HP PC\Downloads\plataux.png" alt="" />
+        <div class="large">
+          <h1>
+            Best deals
+            <span class="Crispy">
+              Crispy <br />
+              Sandwiches</span
+            >
+          </h1>
+          <p>
+            Enjoy the large <br />
+            Dsize of sandwiches. <br />Complete perfect <br />slice of
+            sandwiches.
+          </p>
+          <p class="Proceed">Proceed to order</p>
+        </div>
+      </div>
+      <div class="Deliver">
+        <div class="hot">
+          <div class="eat">
+            <h1>
+              Wanna eat hot <br />& <span class="Wanna"> spicy Pizza?</span>
+            </h1>
+            <p>
+              Pair up with a friend <br />and enjoy the hot and crispy
+              <br />pizza pops. Try it with the best deals.
+            </p>
+            <p class="Proceed">Proceed to order</p>
+          </div>
+          <img src="plataux.png" alt="" />
+        </div>
+        <div class="hot">
+          <img src="plataux.png" alt="" />
+          <div class="eat">
+            <h1>
+              Wanna eat hot <br />& <span class="Wanna"> spicy Pizza?</span>
+            </h1>
+            <p>
+              Pair up with a friend <br />and enjoy the hot and crispy
+              <br />pizza pops. Try it with the best deals.
+            </p>
+            <p class="Proceed">Proceed to order</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="with">
+        <h1>
+          Are you ready to order with <br />
+          the best deals?
+        </h1>
+        
+      </div>
+    </div>
+   
+    <div class="Miami" >
+      
+      <div class="Francisco">
+        <h1>Our top cities</h1>
+        <p>San Francisco
+          <br> Miami<br>  San Diego<br>  East Bay <br> Long Beach</p>
+      </div>
+       <div class="">
+        <p>San Francisco
+          <br> Miami<br>  San Diego<br>  East Bay <br> Long Beach</p>
+      </div>
+       <div class="">
+        <p>San Francisco
+          <br> Miami<br>  San Diego<br>  East Bay <br> Long Beach</p>
+      </div>
+       <div class="">
+        <p>San Francisco
+          <br> Miami<br>  San Diego<br>  East Bay <br> Long Beach</p>
+      </div>
+       <div class="">
+        <p>San Francisco
+          <br> Miami<br>  San Diego<br>  East Bay <br> Long Beach</p>
+      </div>
+    </div>
+    
+     
+  </body>
+</html>
